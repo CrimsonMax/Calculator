@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 800px;
+}
+
+.container {
+    height: 300px;
+    width: 450px;
+    border: 1px solid black;
+    position: absolute;
+    top: 20%;
+    display: grid;
+    grid-template-rows: repeat(5, 50px);
+    grid-template-columns: repeat(4, 100px);
+    row-gap: 8px;
+    column-gap: 8px;
+    padding-left: 10px;
+    padding-top: 8px;
+    border-radius: 10px;
+
+    button {
+        width: 100px;
+        height: 50px;
+        border-radius: 10px;
+        border-bottom: 2px solid black;
+        outline: none;
+        font-size: xx-large;
+        font-weight: bold;
+
+        &:hover {
+            border-bottom: 2px solid black;
+            margin-top: 1px;
+        }
+
+        &:active {
+            border-bottom: 0 solid black;
+            margin-top: 4px;
+        }
+    }
+
+    .red {
+        background-color: red;
+    }
+
+    .yellow {
+        background-color: yellow;
+    }
+
+    .blue {
+        background-color: blue;
+    }
+
+    .white {
+        background-color: white;
+    }
+
+    .grey {
+        background-color: grey;
+    }
+}
+
+input {
+    width: 320px;
+    height: 50px;
+    font-size: xx-large;
+    font-weight: bold;
+    color: orange;
+    direction: rtl;
+    outline: none;
+    border: 2px solid darkgreen;
+    border-radius: 10px;
+}
